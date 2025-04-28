@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class Inheritance</title>
+
+    </head>
+    <body>
+        <h3>JavaScript Class</h3>
+        <p id="details"></p>
+        <script>
+            class drinks {
+                constructor (type) {
+                    this.drinkname = type;
+        
+                }
+                present() {
+                    return "I have a " + this.drinkname;
+
+                }
+            }
+class taste extends drink {
+constructor(type, taste) {
+    super(type);
+    this.drinkname = type;
+
+}
+show() {
+    return this.present() + " and it is a " + this.drinkname;
+}
+}
+letmydrink = new taste("Smoothie", "Sweet");
+document.getElementById("details").innerHTML = mydrink.show();
+        </script>
+    </body>
+</html>
