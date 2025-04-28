@@ -10,26 +10,26 @@
         <p id="Good afternoon"></p>
         <p id="Good evening"></p>
         <script>
-            class student {
+            class Student {
                 constructor(name) {
-                    this.studentname = name;
+                    this.Tisha = name;
 
                 }
                 static Goodmorning() {
-                    return "Good Morning!";
+                    return "Good morning!";
                 }
                 static Goodafternoon(x) {
-                return "Good Afternoon" + x.studentname;
+                return "Good afternoon" + x.Tisha;
 
                 }
                 Goodevening() {
-                    return "Good Evening" + this.studentname;
+                    return "Good evening" + this.Tisha;
                 }
             }
-            myname = new Student ("Tisha");
-            document.getElementById("Good Morning").innerHTML = Student.GoodMorning();
-            document.getElementById("Good Afternoon").innerHTML = myname.GoodAfternoon();
-            document.getElementById("Good Evening").innerHTML = Student.GoodEvening(Tisha);
+            myname = new Student (" Tisha!");
+            document.getElementById("Good morning").innerHTML = Student.Goodmorning();
+            document.getElementById("Good afternoon").innerHTML = Student.Goodafternoon(myname);
+            document.getElementById("Good evening").innerHTML = myname.Goodevening(Tisha);
         </script>
     </body>
 </html>
