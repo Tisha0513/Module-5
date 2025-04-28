@@ -21,11 +21,11 @@
 class taste extends drink {
 constructor(type, taste) {
     super(type);
-    this.drinkname = type;
+    this.drinktaste = taste;
 
 }
 show() {
-    return this.present() + " and it is a " + this.drinkname;
+    return this.drinktaste() + " and it is a " + this.drinktaste;
 }
 }
 letmydrink = new taste("Smoothie", "Sweet");
