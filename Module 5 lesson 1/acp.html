@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <title>Print Random Numbers</title>
+        <h1>JavaScript DataTypes, Let Keyword and Loops</h1>
+        <p id="result"></p>
+        <script>
+            var i; // is undefined 
+            var text = " "; {
+                let i = 0 // assigning a value for i only within the block
+                while (i<20){
+                    text+= "The Values inside the block: " + i + "<br>";
+                    i++
+                }
+                document.getElementById("result").innerHTML = text;
+            }
+            document.write("The value of i outside the block is " +i )
+        </script>
+    </body>
+</html>
