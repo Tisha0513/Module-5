@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Multiply each element in the array by 15:</p>
+        <p id="product_value"></p>
+        <script>
+            var numbers = [60, 28, 6, 18, 27];
+            function myNumbers(num) {
+                return num * 15;
+            }
+            var newarray = numbers.map(myNumbers);
+            document.getElementById("product_value").innerHTML = newarray
+        </script>
+    </body>
+</html>
