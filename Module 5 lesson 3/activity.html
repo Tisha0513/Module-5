@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Sorting numbers</title>
+
+</head>
+<body>
+    <centre><h1>Array Sort in JavaScript</h1></centre>
+    <p>Click this button to see the order in ascending style</p>
+    <button onclick="ascending()">Ascending order.</button>
+
+    <p>Click this button to see the order in descending style</p>
+    <button onclick="descending()">Descending order.</button>
+    <p id="ascending"></p>
+    <p id="descending"></p>
+    <script>
+        let sort = [12, 100, 24, 1, 60, 35, 84, 98, 74, 95];
+    function ascending() {
+        array.sort(function(a, b){return a-b})
+        document.getElementById("ascending").innerHTML = array;
+    }
+    function descending() {
+            array.sort(function (a, b) { return a - b })
+            document.getElementById("descending").innerHTML = array;
+    }
+    </script>
+</body>
+</html>
