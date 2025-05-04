@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #bbdfe8;
+             font-family:monospace
+        }
+        
+    </style>
+    <head>
+        <title>Handling Errors in Js</title>
+    </head>
+    <body>
+        <h1 style="color:indianred">Js Error Handling and the Arrow Function</h1>
+        <p style="color:cornflowerblue">This shows how to explain how to use catch to display an error in the code.</p>
+        <p id="result"></p>
+        <script>
+            product = (x, y) => x*y
+            try{
+                document.getElementById("result").innerHTML = x;
+                // if the function is invoked, here the result will be displayed 
+                // if the variable is given, the error message will get displayed
+            }
+            catch (err) {
+                document.getElementById("result").innerHTML = err.message;
+            }
+        </script>
+    </body>
+</html>
