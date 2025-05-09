@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON</title>
+    </head>
+    <body>
+        <centre><h2 style="color:royalblue">JavaScript Object Notation</h2></centre>
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <script>
+            var myself = {
+                name: "Tisha",
+               country: "Bangladesh",
+               city: "Dhaka",
+            }
+            //converting into JSON
+            var myJSON = JSON.stringify(myself)
+            document.getElementById("result1").innerHTML = myJSON;
+            
+            //converting into JS
+            var newObje = JS.parse(newObje);
+            document.getElementById("result2").innerHTML = "My name is " + newObje.name + ". I am from " + newObje.country + ". I am from " + newObje.city;
+        </script>
+    </body>
+</html>
