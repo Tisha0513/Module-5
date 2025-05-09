@@ -18,7 +18,7 @@
             document.getElementById("result1").innerHTML = myJSON;
             
             //converting into JS
-            var newObje = JS.parse(newObje);
+            var newObje = JSON.parse(myJSON);
             document.getElementById("result2").innerHTML = "My name is " + newObje.name + ". I am from " + newObje.country + ". I am from " + newObje.city;
         </script>
     </body>
