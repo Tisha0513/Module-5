@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            background-color: skyblue;
+        }
+
+    </style>
+    <head>
+        <title>Async function</title>
+    </head>
+    <body>
+        <h1>Js async and await</h1>
+        <h1 id="result"></h1>
+        <script>
+            async function product(x,y) {
+                let response = await x * y;
+                display(response);
+            }
+            function display(some) {
+                document.getElementById("result").innerHTML = some
+            }
+            product(227,698)
+            
+            
+        </script>
+    </body>
+</html>
