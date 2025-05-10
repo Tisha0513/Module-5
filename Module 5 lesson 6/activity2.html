@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+    </style>
+    <body>
+        <h1>Validation API</h1>
+        <p style="color:royalblue">Enter a number and click OK!</p>
+        <input id="id1" type="number" min="100" max="350" required>
+        <button onclick="myFunction()">OK</button>
+        <b><p style="color:steelblue"></p>Make sure that the number is between 100 and 350</b>
+        <p id="message"></p>
+        <script>
+            function myFunction() {
+                var input = document.getElementById("id1");
+                if(!input.checkValidity()) {
+                    document.getElementById("message").innerHTML = input.validationMessage
+                }else {
+                     document.getElementById("message").innerHTML = "input looks Ok"
+                }
+            }
+        </script>
+    </body>
+</html>
