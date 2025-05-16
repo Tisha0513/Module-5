@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ACP form</title>
+        <h1>Name, Age checker</h1>
+    </head>
+    <body>
+       <form name="Tisha" onsubmit="validateForm();">
+    Name: <input type="text" name="fname">
+    Age: <input id="id1" type="number" min="19">
+    <input type="submit" value="login">
+    <p id="message"></p>
+       </form>
+
+    </body>
+    <head>
+        <script>
+            function validateForm() {
+                var x = document.forms["myForm"]["fname"].value;
+                var y = document.forms["myForm"]["id1"].value;
+                if x == "" y == "" {
+                    alert("Name/age cannot be empty");
+                    return false;
+                }
+                else
+                alert("Successfully logged in");
+            }
+        </script>
+    </head>
+</html>
