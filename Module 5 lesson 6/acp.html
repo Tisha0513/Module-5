@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>ACP form</title>
-        <h1>Name, Age checker</h1>
-    </head>
-    <body>
-       <form name="Tisha" onsubmit="validateForm();">
-    Name: <input type="text" name="fname">
-    Age: <input id="id1" type="number" min="18" max="30">
-    <input type="submit" value="Login">
-    <p id="message"></p>
-       </form>
 
-    </body>
-    <head>
-        <script>
-            function validateForm() {
-                var x = document.forms["myForm"]["fname"].value;
-                var y = document.forms["myForm"]["id1"].value;
-                 if(x == "" ||  y == "") {
-                    alert("Name/age cannot be empty");
-                    return false;
-                } else
-                alert("Successfully logged in");
+<head>
+    <title>Form Validation Activity</title>
+    <script>
+        function validateForm() {
+            var x = document.forms["Tisha"]["Tisha"].value;
+            var y = document.forms["Tisha"]["age"].value;
+
+            if (x === "" || y === "") {
+                alert("Name and Age cannot be empty");
+                return false;
             }
-        </script>
-    </head>
+
+            if (y < 18) {
+                alert("You must be 18 or older to log in.");
+                return false;
+            }
+
+            alert("Successfully logged in");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>User Login Form</h2>
+    <p>Please enter your name and age to login.</p>
+
+    <form name="myForm" onsubmit="return validateForm();">
+        Name: <input type="text" name="Tisha"><br><br>
+        Age: <input id="age" name="age" type="number" min="18"><br><br>
+        <input type="submit" value="Login">
+        <p id="message"></p>
+    </form>
+</body>
+
 </html>
